@@ -4,7 +4,17 @@ body {
   margin: 2em auto;
   max-width: 35em;
 }
-.header {
+
+.mono {
+  line-height: 0.25em;
   text-align: center;
   font-family: 'Lucida Console', Monaco, monospace;
+}
+
+.bar {
+  display: inline-block;
+  width: 20px;
+  height: 75px;
+  background-color: teal;
+  margin-right: 2px;
 }
