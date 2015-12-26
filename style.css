@@ -1,0 +1,10 @@
+body {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 2em auto;
+  max-width: 35em;
+}
+.header {
+  text-align: center;
+  font-family: 'Lucida Console', Monaco, monospace;
+}
