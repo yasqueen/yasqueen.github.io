@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>hi</title>
+    <title>alpha</title>
     <meta name="description" content="YAAAS QUEEN!">
     <!-- TODO add favicon -->
 
@@ -13,81 +13,98 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link rel="stylesheet" href="style.css" >
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.min.js" charset="utf-8"></script>
   </head>
   <body>
-    <svg class="y" width="80" height="120">
+    <div class="mono">
+      <h1>YAAAS</h1>
+      <h1>queen</h1>
+    </div>
+    <div id="barchart"></div>
+    <svg id="eight" width="80" height="120">
+      <rect x="0" y="0" width="80" height="20"/>
       <rect x="0" y="50" width="80" height="20"/>
+      <rect x="0" y="100" width="80" height="20"/>
       <rect x="0" y="0" width="20" height="60"/>
-      <rect x="60" y="0" width="20" height="60"/>
-      <rect x="60" y="60" width="20" height="60"/>
-    </svg>
-    <svg class="a" width="80" height="120">
-      <rect x="0" y="0" width="80" height="20"/>
-      <rect x="0" y="50" width="80" height="20"/>
-      <rect x="0" y="100" width="80" height="20"/>
-      <rect x="0" y="60" width="20" height="60"/>
-      <rect x="60" y="0" width="20" height="60"/>
-      <rect x="60" y="60" width="20" height="60"/>
-    </svg>
-    <svg class="a" width="80" height="120">
-      <rect x="0" y="0" width="80" height="20"/>
-      <rect x="0" y="50" width="80" height="20"/>
-      <rect x="0" y="100" width="80" height="20"/>
       <rect x="0" y="60" width="20" height="60"/>
       <rect x="60" y="0" width="20" height="60"/>
       <rect x="60" y="60" width="20" height="60"/>
     </svg>
     <svg class="a" width="80" height="120">
+      <!-- top_bar -->
       <rect x="0" y="0" width="80" height="20"/>
+      <!-- middle_bar -->
       <rect x="0" y="50" width="80" height="20"/>
+      <!-- bottom_bar -->
       <rect x="0" y="100" width="80" height="20"/>
+      <!-- bottom_left -->
       <rect x="0" y="60" width="20" height="60"/>
+      <!-- top_right -->
       <rect x="60" y="0" width="20" height="60"/>
-      <rect x="60" y="60" width="20" height="60"/>
-    </svg>
-    <svg class="s" width="80" height="120">
-      <rect x="0" y="0" width="80" height="20"/>
-      <rect x="0" y="50" width="80" height="20"/>
-      <rect x="0" y="100" width="80" height="20"/>
-      <rect x="0" y="0" width="20" height="60"/>
-      <rect x="60" y="60" width="20" height="60"/>
-    </svg>
-    <br />
-    <svg class="q" width="80" height="120">
-      <rect x="0" y="0" width="80" height="20"/>
-      <rect x="0" y="50" width="80" height="20"/>
-      <rect x="0" y="0" width="20" height="60"/>
-      <rect x="60" y="0" width="20" height="60"/>
-      <rect x="60" y="60" width="20" height="60"/>
-    </svg>
-    <svg class="u" width="80" height="120">
-      <rect x="0" y="50" width="80" height="20"/>
-      <rect x="0" y="0" width="20" height="60"/>
-      <rect x="60" y="0" width="20" height="60"/>
-      <rect x="60" y="60" width="20" height="30"/>
-    </svg>
-    <svg class="e" width="80" height="120">
-      <rect x="0" y="0" width="80" height="20"/>
-      <rect x="0" y="50" width="80" height="20"/>
-      <rect x="0" y="100" width="80" height="20"/>
-      <rect x="0" y="0" width="20" height="60"/>
-      <rect x="0" y="60" width="20" height="60"/>
-      <rect x="60" y="0" width="20" height="60"/>
-    </svg>
-    <svg class="e" width="80" height="120">
-      <rect x="0" y="0" width="80" height="20"/>
-      <rect x="0" y="50" width="80" height="20"/>
-      <rect x="0" y="100" width="80" height="20"/>
-      <rect x="0" y="0" width="20" height="60"/>
-      <rect x="0" y="60" width="20" height="60"/>
-      <rect x="60" y="0" width="20" height="60"/>
-    </svg>
-    <svg class="n" width="80" height="120">
-      <rect x="0" y="50" width="80" height="20"/>
-      <rect x="0" y="30" width="20" height="30"/>
-      <rect x="0" y="60" width="20" height="60"/>
+      <!-- bottom_right -->
       <rect x="60" y="60" width="20" height="60"/>
     </svg>
 
+    <svg class="b" width="80" height="120">
+      <!-- middle_bar -->
+      <rect x="0" y="50" width="80" height="20"/>
+      <!-- bottom_bar -->
+      <rect x="0" y="100" width="80" height="20"/>
+      <!-- top_left -->
+      <rect x="0" y="0" width="20" height="60"/>
+      <!-- bottom_left -->
+      <rect x="0" y="60" width="20" height="60"/>
+      <!-- bottom_right -->
+      <rect x="60" y="60" width="20" height="60"/>
+    </svg>
+
+    <svg class="c" width="80" height="120">
+      <!-- middle_bar -->
+      <rect x="0" y="50" width="80" height="20"/>
+      <!-- bottom_bar -->
+      <rect x="0" y="100" width="80" height="20"/>
+      <!-- bottom_left -->
+      <rect x="0" y="60" width="20" height="60"/>
+    </svg>
+
+    <svg class="d" width="80" height="120">
+      <!-- middle_bar -->
+      <rect x="0" y="50" width="80" height="20"/>
+      <!-- bottom_bar -->
+      <rect x="0" y="100" width="80" height="20"/>
+      <!-- bottom_left -->
+      <rect x="0" y="60" width="20" height="60"/>
+      <!-- top_right -->
+      <rect x="60" y="0" width="20" height="60"/>
+      <!-- bottom_right -->
+      <rect x="60" y="60" width="20" height="60"/>
+    </svg>
+
+    <svg class="e" width="80" height="120">
+      <!-- top_bar -->
+      <rect x="0" y="0" width="80" height="20"/>
+      <!-- middle_bar -->
+      <rect x="0" y="50" width="80" height="20"/>
+      <!-- bottom_bar -->
+      <rect x="0" y="100" width="80" height="20"/>
+      <!-- top_left -->
+      <rect x="0" y="0" width="20" height="60"/>
+      <!-- bottom_left -->
+      <rect x="0" y="60" width="20" height="60"/>
+      <!-- top_right -->
+      <rect x="60" y="0" width="20" height="60"/>
+    </svg>
+
+    <svg class="f" width="80" height="120">
+      <!-- top_bar -->
+      <rect x="0" y="0" width="80" height="20"/>
+      <!-- middle_bar -->
+      <rect x="0" y="50" width="80" height="20"/>
+      <!-- top_left -->
+      <rect x="0" y="0" width="20" height="60"/>
+      <!-- bottom_left -->
+      <rect x="0" y="60" width="20" height="60"/>
+    </svg>
+    <script src="main.js"></script>
   </body>
 </html>

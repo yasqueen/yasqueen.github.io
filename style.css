@@ -7,7 +7,7 @@ body {
 
 .mono {
   line-height: 0.25em;
-  text-align: center;
+  /*text-align: center;*/
   font-family: 'Lucida Console', Monaco, monospace;
 }
 
@@ -17,4 +17,8 @@ body {
   height: 75px;
   background-color: teal;
   margin-right: 2px;
+}
+
+svg .bar {
+  
 }
