@@ -17,7 +17,7 @@ var eight = {
 
 var counter = 0;
 
-d3.select(".bitwise").selectAll("div")
+d3.select("#barchart").selectAll("div")
   .data(Object.keys(eight))
   .enter()
   .append("div")
