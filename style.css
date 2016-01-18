@@ -1,9 +1,10 @@
 body {
   font-size: 1em;
   line-height: 1.5em;
+  text-align: center;
   margin: 2em auto;
-  max-width: 35em;
 }
+
 
 .mono {
   line-height: 0.25em;
@@ -21,4 +22,18 @@ body {
 
 svg .bar {
   
+}
+
+svg {
+  max-width: 80px;
+}
+
+.a, .e, .six {
+  fill: #F2337D;
+}
+
+@media screen and (max-width: 500px) {
+  svg {
+    width: 15%;
+  }
 }
